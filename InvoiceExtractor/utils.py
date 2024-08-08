@@ -14,5 +14,9 @@ def get_pdf_text(pdf_doc):
         text += page.extract_text()
     return text
 
-# Function to extract information from PDF text
+# Function to extract information from PDF text sent to LLM
+def extract_data(pages_data):
+    template = '''Extract the following values: B/L Number, Consignee name, email ID, telephone, Description, container  from 
 
+
+'''
